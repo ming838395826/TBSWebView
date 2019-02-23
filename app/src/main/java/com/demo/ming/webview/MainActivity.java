@@ -88,11 +88,11 @@ public class MainActivity extends AppCompatActivity {
 //    private String openUrl = "http://oa.hylss.gov.cn:8048/mobileoa/rcsLogin!toDl.action";
     public String testUrl = "http://soft.imtt.qq.com/browser/tes/feedback.html";
     //    private String openUrl = "http://192.168.1.100:8048/mobileoa/rcsLogin!toDl.action";
-//    private String openUrl = "http://jtoa.ecinc.com.cn/jtapp/mindex.html#/login";
+    private String openUrl = "http://jtoa.ecinc.com.cn/jtapp/mindex.html#/login";//交投正式
 //    private String openUrl = "http://192.168.1.250:8848/dcfj_app/mindex.html#/home/content/home.portal.portal/home.portal.portal";
-    private String openUrl = "http://192.168.1.107:8067/mindex.html#/login";//河源
+//    private String openUrl = "http://192.168.1.107:8067/mindex.html#/login";//河源
 //        private String openUrl = "http://14.18.154.84:8096/mindex.html#home/content/home.portal.portal/home.portal.portal";//清远
-//    private String openUrl = "http://192.168.1.127:8080/app/mindex.html#/login";//交投测试
+//    private String openUrl = "http://192.168.1.127:8081/app/mindex.html#/login";//交投测试
 //    private String openUrl = "http://19.176.100.115:8081/rsjapp/mindex.html#/login";//潮州人设
 //    private String openUrl = "http://19.176.100.115:8090/sbjapp/mindex.html#/login";//潮州社保
 
