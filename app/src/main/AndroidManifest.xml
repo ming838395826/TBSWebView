@@ -66,6 +66,9 @@
         android:theme="@style/AppTheme"
         tools:replace="android:label,android:icon">
         <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <meta-data
         android:name="QBSDKAppKey"
         android:value="PpeRpHjyzL5vTlc9LuNrRmHM" />
         <activity android:name=".MainActivity">
