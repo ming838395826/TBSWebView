@@ -20,6 +20,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -87,14 +88,16 @@ public class MainActivity extends AppCompatActivity {
      */
 //    private String openUrl = "http://oa.hylss.gov.cn:8048/mobileoa/rcsLogin!toDl.action";
     public String testUrl = "http://soft.imtt.qq.com/browser/tes/feedback.html";
-    //    private String openUrl = "http://192.168.1.100:8048/mobileoa/rcsLogin!toDl.action";
-    private String openUrl = "http://jtoa.ecinc.com.cn/jtapp/mindex.html#/login";//交投正式
+//        private String openUrl = "http://192.168.1.127:8848/5.0移动端/河源人社局/mindex.html#/login";
+//    private String openUrl = "http://jtoa.ecinc.com.cn/jtapp/mindex.html#/login";//交投正式
 //    private String openUrl = "http://192.168.1.250:8848/dcfj_app/mindex.html#/home/content/home.portal.portal/home.portal.portal";
-//    private String openUrl = "http://192.168.1.107:8067/mindex.html#/login";//河源
+    private String openUrl = "http://192.168.1.107:8061/mindex.html#/login";//河源
 //        private String openUrl = "http://14.18.154.84:8096/mindex.html#home/content/home.portal.portal/home.portal.portal";//清远
 //    private String openUrl = "http://192.168.1.127:8081/app/mindex.html#/login";//交投测试
 //    private String openUrl = "http://19.176.100.115:8081/rsjapp/mindex.html#/login";//潮州人设
 //    private String openUrl = "http://19.176.100.115:8090/sbjapp/mindex.html#/login";//潮州社保
+//        private String openUrl = "http://oa.hylss.gov.cn:8048/mindex.html#/login";//河源
+//      private String openUrl = "http://192.168.1.127:8082/app/mindex.html#/home/content/home.portal.portal/home.portal.portal";//东城公安局
 
 
     @Override
@@ -124,12 +127,13 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setDisplayShowTitleEnabled(false);
         }
         initWebView();
+//        FileUtils.deleteDir(Environment.getExternalStorageDirectory() + File.separator + "webview");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        mWebView.reload();
+//        mWebView.reload();
         verifyStoragePermissions(this);
     }
 
@@ -409,6 +413,13 @@ public class MainActivity extends AppCompatActivity {
 
 
             });
+        }
+
+        @JavascriptInterface
+        public String getImie() {
+            TelephonyManager tm = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
+            String imie = tm.getDeviceId();
+            return imie;
         }
 
         @JavascriptInterface
