@@ -61,6 +61,19 @@ android {
 
             buildConfigField "String"   , "APP_PROVIDER" , '"com.ecinc.emoa.hyrsj.fileprovider"'
         }
+
+        dcgaj {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.ecinc.emoa.dcgaj"]
+            applicationId "com.ecinc.emoa.dcgaj"
+            resValue "string", "app_name", "东城公安局"
+            resValue "bool", "isrRank", 'true'
+            manifestPlaceholders = [ENVIRONMENT: "dcgaj",
+                                    app_icon   : "@mipmap/ic_logo_dcgaj",
+                                    app_name   : "东城公安局",
+                                    APP_PROVIDER   : "com.ecinc.emoa.dcgaj.fileprovider"]
+
+            buildConfigField "String"   , "APP_PROVIDER" , '"com.ecinc.emoa.dcgaj.fileprovider"'
+        }
     }
 }
 
