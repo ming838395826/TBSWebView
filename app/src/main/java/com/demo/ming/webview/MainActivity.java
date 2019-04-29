@@ -91,16 +91,16 @@ public class MainActivity extends AppCompatActivity {
 //    private String openUrl = "http://oa.hylss.gov.cn:8048/mobileoa/rcsLogin!toDl.action";
     public String testUrl = "http://soft.imtt.qq.com/browser/tes/feedback.html";
     //        private String openUrl = "http://192.168.1.127:8848/5.0移动端/河源人社局/mindex.html#/login";
-    private String openUrl = "http://portable.gddci.com/jtapp/mindex.html#/login";//交投正式
+//    private String openUrl = "http://portable.gddci.com:8081/mindex.html#/login";//交投正式
 //    private String openUrl = "http://192.168.1.250:8848/dcfj_app/mindex.html#/home/content/home.portal.portal/home.portal.portal";
 //    private String openUrl = "http://192.168.1.107:8067/mindex.html#/login";//河源
-//        private String openUrl = "http://192.168.1.211:8848/hyrsj_app/mindex.html#/login";//河源
+//        private String openUrl = "http://192.168.1.127:5500/河源人社局/mindex.html#/login";//河源
 //        private String openUrl = "http://14.18.154.84:8096/mindex.html#home/content/home.portal.portal/home.portal.portal";//清远
-//    private String openUrl = "http://192.168.1.102:8080/h5/mindex.html#/login";//交投测试
+    private String openUrl = "http://192.168.1.127:5500/潮州人社局/mindex.html#/login";//交投测试
 //    private String openUrl = "http://19.176.100.115:8081/rsjapp/mindex.html#/login";//潮州人设
 //    private String openUrl = "http://19.176.100.115:8090/sbjapp/mindex.html#/login";//潮州社保
 //        private String openUrl = "http://oa.hylss./gov.cn:8048/mindex.html#/login";//河源
-//      private String openUrl = "http://14.18.154.84:8099/h5/mindex.html#/login";//东城公安局
+//      private String openUrl = "http://192.168.1.127:5500/东莞市东城公安局/mindex.html#/login";//东城公安局
 //        private String openUrl ="file:///android_asset/test.html";
 
 
